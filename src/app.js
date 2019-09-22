@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
 const app = express()
+const port = process.env.PORT || 3300
 
 //setup directories for the templates and for the public folders
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -84,6 +85,6 @@ app.get('*',(req, res) =>{
 })
 
 //start the server
-app.listen(3300, () => {
-    console.log('resver is up on port 3300')
+app.listen(port, () => {
+    console.log('resver is up on port ' + port)
 });
