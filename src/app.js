@@ -86,5 +86,5 @@ app.get('*',(req, res) =>{
 
 //start the server
 app.listen(port, () => {
-    console.log('resver is up on port ' + port)
+    console.log('server is up on port ' + port)
 });
